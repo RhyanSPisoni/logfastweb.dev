@@ -12,6 +12,7 @@ function App() {
       <h1>Olá, {name}</h1>
       <p>Soma: {sum(2, 5)}</p>
       <img src={url} alt='Minha Imagem' />
+      <h1>Testando IP Logfast.dev</h1>
     </div>
   );
 }

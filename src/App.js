@@ -1,7 +1,7 @@
 import './App.css';
 
 function App() {
-  const name = "Rhyan";
+  const name = "LogFast";
   const url = 'https://via.placeholder.com/150';
 
   function sum(a, b) {

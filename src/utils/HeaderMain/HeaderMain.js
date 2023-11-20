@@ -13,7 +13,7 @@ function HeaderMain() {
                     </div>
                     <div>
                         <span>LOGFAST DEV</span>
-                        <img src={imgLogin} />
+                        <img src={imgLogin} alt={imgLogin} />
                     </div>
                 </header >
             </div>

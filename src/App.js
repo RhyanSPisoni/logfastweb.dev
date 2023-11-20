@@ -1,17 +1,16 @@
 import './App.css';
 
-function App() {
-  const name = "Rhyan";
-  const url = 'https://via.placeholder.com/150';
+import HeaderMain from './utils/HeaderMain/HeaderMain'
 
-  function sum(a, b) {
-    return a + b;
-  }
+function App() {
+  const imgCenter = 'https://via.placeholder.com/1000x150';
+
   return (
     <div className="App">
-      <h1>Olá, {name}</h1>
-      <p>Soma: {sum(2, 5)}</p>
-      <img src={url} alt='Minha Imagem' />
+      <HeaderMain />
+      <div className='BodyCenter'>
+        <p>Teste</p>
+      </div>
     </div>
   );
 }

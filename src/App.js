@@ -8,9 +8,7 @@ function App() {
   return (
     <div className="App">
       <HeaderMain />
-      <div className='BodyCenter'>
-        <p>Teste</p>
-      </div>
+      <p>Testando</p>
     </div>
   );
 }

@@ -4,16 +4,38 @@
     box-sizing: border-box;
 }
 
-.container {
+/* .container {
     width: 100%;
     min-height: 100vh;
-}
+} */
 
-.container header {
+.container>header {
     padding-right: 10px;
     padding: 8px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgb(35, 43, 59);
+    font-size: larger;
+}
+
+.container-left>*,
+.container-right>* {
+    margin-left: 10px;
+}
+
+.container-left,
+.container-right {
+    display: flex;
+    align-items: center;
+}
+
+.container-left :hover,
+.container-right:hover {
+    cursor: pointer;
+    /* color: rgb(35, 43, 59); */
+    /* border-width: 1000px;
+    border-radius: 10px; */
+    text-decoration: underline;
+    /* background-color: #1A1E29; */
 }

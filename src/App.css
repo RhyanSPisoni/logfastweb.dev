@@ -5,6 +5,29 @@
   box-sizing: border-box;
 }
 
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
+  background-color: #4D515B;
+}
+
+
+/* Meio */
+.bodyContent {
+  align-items: center;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  width: 98vw;
+  height: 90vh;
   background-color: #1A1E29;
+}
+
+
+.bodyContent>.content {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
 }

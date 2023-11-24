@@ -14,10 +14,10 @@ span {
     color: #FFFFFF;
 }
 
-/* .container {
+.container {
     width: 100%;
     min-height: 100vh;
-} */
+}
 
 .container>header {
     padding-right: 10px;

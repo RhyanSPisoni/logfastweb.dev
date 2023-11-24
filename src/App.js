@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <HeaderMain />
-      <div className='logo-center'>
-        <img src={imgCenter} alt={imgCenter} />
+      <div className='bodyContent'>
+        <div className='content'>
+          <img src={imgCenter} alt={imgCenter} />
+        </div>
       </div>
     </div>
   );

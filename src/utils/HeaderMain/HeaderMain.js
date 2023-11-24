@@ -7,7 +7,7 @@ function HeaderMain() {
             <div class='container'>
                 <header>
                     <div className='container-left'>
-                        <span>HOME</span>
+                        <span id='HeaderHome'>HOME</span>
                         <span onClick={() => TestLinkUrl(2)}>PROJETOS</span>
                         <span onClick={() => TestLinkUrl(1)} >CONTATO</span>
                     </div>

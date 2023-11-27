@@ -1,0 +1,17 @@
+.gitHub-container {
+    padding-top: 5vh;
+    padding-left: 5vw;
+    width: 50%;
+}
+
+.gitHub-container>h1 {
+    color: azure;
+    padding-bottom: 2vh;
+}
+
+.itemGitHub {
+    color: #4D515B;
+    padding-top: 2vh;
+}
+
+.itemGitHub {}

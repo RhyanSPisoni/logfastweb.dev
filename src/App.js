@@ -1,18 +1,26 @@
+import imgLogo from './img/logo.png'
 import './App.css';
 import HeaderMain from './utils/HeaderMain/HeaderMain';
+import HomePage from './utils/HomePage/HomePage'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+const imgCenter = 'https://via.placeholder.com/154';
 
 function App() {
-  const imgCenter = 'https://via.placeholder.com/154';
-
   return (
-    <div className="App">
+    <Router>
       <HeaderMain />
       <div className='bodyContent'>
         <div className='content'>
-          <img src={imgCenter} alt={imgCenter} />
+          <img src={imgLogo} alt={imgCenter} />
         </div>
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+        </Routes>
       </div>
-    </div>
+
+    </Router>
+
   );
 }
 

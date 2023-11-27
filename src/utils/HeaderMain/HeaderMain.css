@@ -1,17 +1,24 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
-    font-size: x-large;
 }
 
-span {
+.container-right>img {
+    margin-left: 2vh;
+}
+
+#LinkRoutes {
+    box-sizing: border-box;
+    font-size: x-large;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
     color: #4D515B;
 }
 
-#HeaderHome {
+#LinkRoutes:hover {
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 .container {
@@ -24,7 +31,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1A1E29;
+    background-color: #161c2a;
     font-size: larger;
 }
 
@@ -42,9 +49,5 @@ span {
 .container-left :hover,
 .container-right:hover {
     cursor: pointer;
-    /* color: rgb(35, 43, 59); */
-    /* border-width: 1000px;
-    border-radius: 10px; */
     text-decoration: underline;
-    /* background-color: #1A1E29; */
 }

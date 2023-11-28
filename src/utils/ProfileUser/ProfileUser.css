@@ -1,17 +1,46 @@
-.gitHub-container {
-    padding-top: 5vh;
-    padding-left: 5vw;
-    width: 50%;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.gitHub-container>h1 {
+.gitHub-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: azure;
     padding-bottom: 2vh;
 }
 
 .itemGitHub {
-    color: #4D515B;
     padding-top: 2vh;
+    margin-right: 5vw;
+    width: 20%;
+    min-height: 20px;
+    background-color: #222632;
+    border: 1px solid black;
+    padding: 1%;
+    margin-top: 2vh;
 }
 
-.itemGitHub {}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.gitHub-container :hover {
+    border: 1px solid yellow;
+    color: aliceblue;
+}
+
+.itemGitHub :hover {
+    border: 1px solid yellow;
+}

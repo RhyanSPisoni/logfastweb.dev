@@ -3,16 +3,11 @@
     margin: 0;
 }
 
-.git-all {
-    position: relative;
-}
-
 .gitHub-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -26,37 +21,65 @@ h1 {
 
 .itemGitHub {
     position: relative;
-    padding-top: 2vh;
-    margin-right: 5vw;
-    width: 20%;
-    min-height: 20px;
-    background-color: #222632;
-    border: 2px solid black;
-    padding: 1%;
-    padding-bottom: 3vh;
+    padding-top: 1vh;
     margin-top: 2vh;
+    margin-right: 5vw;
+    width: 30%;
+    min-height: 160px;
+    background-color: #222632;
+    border: 2px solid aliceblue;
+    margin-top: 2vh;
+    font-weight: bold;
+    color: #4D515B;
+    text-decoration: none;
 }
 
-.itemGitHub>a {
-    position: absolute;
-    right: 0.2vw;
-    bottom: 0.5vh;
+.itemGitHub :hover {
+    color: aliceblue;
+}
 
-    width: 1vw;
-    color: black;
-    text-decoration: underline;
+.itemGitHub>section {
+    margin-left: 2%;
+}
+
+.date-updated,
+.date-created {
+    color: #4D515B;
+    padding: 3px;
+}
+
+.itemGitHub>footer {
+    justify-content: space-between;
     display: flex;
-    justify-content: end;
-    /* display: flex; */
-    /* width: auto; */
+    background-color: #161c2a;
+    width: 100%;
+    position: absolute;
+    bottom: 0.5%;
 }
 
+.itemGitHub>section>a {
+    color: #4D515B;
+}
 
+#h2-ling {
+    display: flex;
+}
+
+#h2-ling>* {
+    margin-left: 2%;
+}
+
+.itemGitHub:hover>* {
+    color: white
+}
+
+/* 
+.itemGitHub :hover>section>a {
+    color: #fff;
+} */
 
 .gitHub-container :hover {
-    border: 2px solid aliceblue;
     border-radius: 5%;
-    color: aliceblue;
 }
 
 .gitHub-container :hover>* {
@@ -67,8 +90,53 @@ h1 {
     margin-bottom: 2vh;
 }
 
-#id-language-git {
-    position: absolute;
-    left: 0.5vw;
-    bottom: 0.5vh;
+.itemGitHub>* {
+    border: 0;
+}
+
+
+
+/* Cores texto */
+.roxo {
+    color: purple;
+}
+
+.vermelho {
+    color: red
+}
+
+.laranja {
+    color: orange
+}
+
+.azul {
+    color: blue;
+}
+
+.amarelo {
+    color: yellow;
+}
+
+
+
+
+/* Cores Bordas */
+.roxoBorda {
+    border: 2px solid purple;
+}
+
+.vermelhoBorda {
+    border: 2px solid red;
+}
+
+.laranjaBorda {
+    border: 2px solid orange;
+}
+
+.azulBorda {
+    border: 2px solid blue;
+}
+
+.amareloBorda {
+    border: 2px solid yellow;
 }

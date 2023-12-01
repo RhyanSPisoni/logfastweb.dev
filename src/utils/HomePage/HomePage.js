@@ -20,11 +20,11 @@ function HomePage() {
     return (
         <>
             <div className='cont-textos'>
-                <h2>Portifólios disponiveis:</h2>
+                <h2>Portifólio disponivel:</h2>
 
             </div>
-            <div className='person-info'>
-                <div className='person-info-div'>
+            <div className='home-page-person-info'>
+                <div className='home-page-person-info-div'>
                     <img src={usePersonGitHub.avatar_url} alt={usePersonGitHub.avatar_url} />
                     <div>
                         <h2>{usePersonGitHub.name}</h2>

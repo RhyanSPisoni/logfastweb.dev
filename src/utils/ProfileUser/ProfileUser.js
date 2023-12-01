@@ -64,15 +64,15 @@ function ProfileUser() {
                             useItensGitHub.map((item, index) => (
                                 <div key={index} className={`itemGitHub 
                             ${ENUM_COLORS_BORDA[item.language] || "default"}`} >
-                                    <section>
-                                        <h2 id='id-name-git'>Nome: {item.name}</h2>
-                                        <h2 id='h2-ling'>Linguagen(s):
-                                            <h4 id='h2-lingg' className={`${ENUM_COLORS[item.language] || "default"}`}>
-                                                {item.language}
-                                            </h4>
-                                        </h2>
+                                    <section className='profile-user-container-top'>
+                                        <section className='profile-user-order-item'>
+                                            <h2 id='id-name-git'>Nome: {item.name}</h2>
+                                            <section className={`cicle ${ENUM_COLORS[item.language] || "default"}`}></section>
+                                        </section>
+                                        <h2 id='h2-ling'>Linguagem: {item.language}</h2>
                                         <a href={item.html_url}>Repositório</a>
                                     </section>
+
                                     <footer>
                                         <h5 className='date-created'>Criado: {ConveterData(item.created_at)}</h5>
                                         <h5 className='date-updated'>Atualizado: {ConveterData(item.updated_at)}</h5>

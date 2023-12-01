@@ -140,3 +140,13 @@ h1 {
 .amareloBorda {
     border: 2px solid yellow;
 }
+
+.cont-profile {
+    padding: 1%;
+    margin: 1%;
+    width: 98%;
+    height: 98%;
+    padding-bottom: 2vw;
+    background-color: #161c2a;
+    justify-content: center;
+}

@@ -3,7 +3,46 @@
     margin: 0;
 }
 
-.home-page-container {
-    width: 20%;
-    height: 20%;
+.person-info {
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* align-items: end; */
+}
+
+.person-info-div>img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+}
+
+.cont-port {
+    padding: 0.5%;
+    padding-left: 5%;
+    margin-top: 0.5vw;
+    background-color: #222632;
+    border-radius: 4%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.person-info-div>div {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.person-info-div>div>h2 {
+    /* width: 100%; */
+    margin-left: 5px;
+}
+
+
+.cont-textos {
+    color: white;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

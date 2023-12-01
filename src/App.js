@@ -4,22 +4,22 @@ import HeaderMain from './utils/HeaderMain/HeaderMain';
 import HomePage from './utils/HomePage/HomePage'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const imgCenter = 'https://via.placeholder.com/154';
 
+const imgCenter = 'https://via.placeholder.com/154';
 function App() {
   return (
-    <Router>
+    // <Router>
+    <>
       <HeaderMain />
       <div className='bodyContent'>
         <div className='content'>
           <img src={imgLogo} alt={imgCenter} />
         </div>
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-        </Routes>
+        <HomePage />
       </div>
+    </>
 
-    </Router>
+    // </Router>
 
   );
 }

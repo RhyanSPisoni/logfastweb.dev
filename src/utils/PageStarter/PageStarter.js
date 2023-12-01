@@ -10,7 +10,7 @@ function PageStarter() {
             <div className='div-texto'>
                 <h1>SEJA BEM VINDO</h1>
             </div>
-            <Link to="home">
+            <Link id='link-text' to="home">
                 <div className='container-bottom'>
                     <h2>Acessar</h2>
                 </div>

@@ -5,29 +5,22 @@
   box-sizing: border-box;
 }
 
-.App {
-  width: 100vw;
-  height: 100vh;
-}
-
 body {
-  background-color: #4D515B;
+  background-color: #222632;
 }
-
 
 /* Meio */
 .bodyContent {
-  align-items: center;
-  margin-top: 2vh;
-  margin-left: 2vh;
-  width: 98vw;
-  height: 90vh;
-  background-color: #1A1E29;
+  margin: 1%;
+  width: 98%;
+  height: 98%;
+  padding-bottom: 2vw;
+  background-color: #161c2a;
+  justify-content: center;
 }
 
-
-.bodyContent>.content {
-  padding-top: 5vh;
+.content {
+  padding-top: 2vh;
   display: flex;
   justify-content: center;
 }

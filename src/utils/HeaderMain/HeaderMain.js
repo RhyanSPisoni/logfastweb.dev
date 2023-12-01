@@ -1,6 +1,7 @@
-import './HeaderMain.css'
-import imgLogin from '../../img/user.png'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import React from 'react';
+import './HeaderMain.css';
+import imgLogin from '../../img/user.png';
+import { Link } from 'react-router-dom';
 
 function HeaderMain() {
     const imgLoginAlt = 'https://via.placeholder.com/40';
@@ -20,7 +21,7 @@ function HeaderMain() {
                         </span>
                         <img src={imgLogin} alt={imgLoginAlt} />
                     </div>
-                </header >
+                </header>
             </div>
         </div>
     );

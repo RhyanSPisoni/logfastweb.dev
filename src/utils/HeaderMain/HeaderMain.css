@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .header-main-container-right>img {
     margin-left: 2vh;
 }
@@ -52,5 +57,6 @@
 @media screen and (max-width:543px) {
     .header-main-container-right {
         visibility: hidden;
+
     }
 }

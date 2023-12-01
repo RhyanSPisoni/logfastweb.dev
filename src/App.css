@@ -5,15 +5,15 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #222632;
-}
+
 
 /* Meio */
 .bodyContent {
   margin: 1%;
+  /* width: 98vw;
+  height: 90vh; */
   width: 98%;
-  height: 98%;
+  height: 90vh;
   padding-bottom: 2vw;
   background-color: #161c2a;
   justify-content: center;

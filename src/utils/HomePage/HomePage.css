@@ -3,41 +3,34 @@
     margin: 0;
 }
 
-.person-info {
+.home-page-person-info {
     color: white;
     display: flex;
     justify-content: center;
-    /* align-items: end; */
+    margin-top: 5vh;
 }
 
-.person-info-div>img {
+.home-page-person-info-div>img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    /* margin-top: 5vw; */
     margin-bottom: 1vw;
 }
 
+.home-page-person-info-div>div>* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .cont-port {
-    padding: 0.5%;
-    padding-left: 5%;
+    padding: 2%;
     margin-top: 0.5vw;
     background-color: #222632;
     border-radius: 10%;
     border: 2px solid black;
     cursor: pointer;
 }
-
-.person-info-div>div {
-    width: 100%;
-    margin-left: 20px;
-}
-
-.person-info-div>div>h2 {
-    /* width: 100%; */
-    margin-left: 5px;
-}
-
 
 .cont-textos {
     color: white;

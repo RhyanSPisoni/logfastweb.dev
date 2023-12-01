@@ -61,29 +61,12 @@ h1 {
     color: #4D515B;
 }
 
-#h2-ling {
-    display: flex;
-}
-
 #h2-ling>* {
     margin-left: 2%;
 }
 
 .itemGitHub:hover>* {
     color: white
-}
-
-/* 
-.itemGitHub :hover>section>a {
-    color: #fff;
-} */
-
-.gitHub-container :hover {
-    border-radius: 5%;
-}
-
-.gitHub-container :hover>* {
-    border: none;
 }
 
 #id-name-git {
@@ -96,28 +79,26 @@ h1 {
 
 
 
-/* Cores texto */
+/* Cores fundo */
 .roxo {
-    color: purple;
+    background-color: purple;
 }
 
 .vermelho {
-    color: red
+    background-color: red
 }
 
 .laranja {
-    color: orange
+    background-color: orange
 }
 
 .azul {
-    color: blue;
+    background-color: blue;
 }
 
 .amarelo {
-    color: yellow;
+    background-color: yellow;
 }
-
-
 
 
 /* Cores Bordas */
@@ -149,4 +130,59 @@ h1 {
     padding-bottom: 2vw;
     background-color: #161c2a;
     justify-content: center;
+}
+
+.cicle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 1vh;
+    margin-right: 1vw;
+}
+
+.profile-user-order-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1100px) {
+    .itemGitHub {
+        width: 40vh;
+        overflow-x: hidden;
+    }
+
+    .person-info {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .person-info>img {
+        margin-bottom: 5vh;
+    }
+
+    .person-info>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .person-info>div>h3 {
+        margin-top: 1vh;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .cont-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cont-profile>h1 {
+        margin-bottom: 2vh;
+        text-align: center;
+    }
 }

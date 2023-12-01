@@ -1,19 +1,21 @@
 import React from 'react';
-import '../../App.css';
 import './PageStarter.css';
 import { Link } from 'react-router-dom';
 
 function PageStarter() {
     return (
-        <div className='page-starter'>
-            <div className='div-texto'>
-                <h1>SEJA BEM VINDO</h1>
-            </div>
-            <Link id='link-text' to="/home">
-                <div className='container-bottom'>
-                    <h2>Acessar</h2>
+        <div>
+            <div className='page-starter-page-starter'>
+                <div className='page-starter-div-texto'>
+                    <h1>SEJA BEM VINDO!</h1>
                 </div>
-            </Link>
+                <Link id='page-starter-link-text' to="/home">
+                    <div className='page-starter-container-bottom'>
+                        Acessar
+                    </div>
+                </Link>
+                <h5>Desenvolvido em ReactJS com integração ao GitHub</h5>
+            </div>
         </div>
     );
 }

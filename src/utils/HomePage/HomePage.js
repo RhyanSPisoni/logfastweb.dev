@@ -18,7 +18,7 @@ function HomePage() {
     }, []);
 
     return (
-        <>
+        <div className='home-page-container'>
             <div className='cont-textos'>
                 <h2>Portifólio disponivel:</h2>
 
@@ -36,7 +36,7 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

@@ -47,13 +47,13 @@ function ProfileUser() {
     }
 
     return (
-        <>
+        <div className='profile-user-container'>
             <HeaderMain />
             <div className='cont-profile'>
                 <div className='person-info'>
                     <img src={usePersonGitHub.avatar_url} alt={usePersonGitHub.avatar_url} />
                     <div>
-                        <h2>Nome: {usePersonGitHub.name}</h2>
+                        <h2>{usePersonGitHub.name}</h2>
                         <h3>Bio: {usePersonGitHub.bio}</h3>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ function ProfileUser() {
                     }
                 </div>
             </div>
-        </ >
+        </div>
 
     )
 }

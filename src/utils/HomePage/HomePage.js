@@ -27,7 +27,7 @@ function HomePage() {
                     <img src={usePersonGitHub.avatar_url} alt={usePersonGitHub.avatar_url} />
                     <div>
                         <h2>{usePersonGitHub.name}</h2>
-                        <Link to={"portfolio"}>
+                        <Link id='link-port' to={"portfolio"}>
                             <div className='cont-port'>
                                 <h3>Acessar Portifólio</h3>
                             </div>

@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PageStarter from './utils/PageStarter/PageStarter'
-import HomePage from './utils/HomePage/HomePage';
 import ProfileUser from './utils/ProfileUser/ProfileUser'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';

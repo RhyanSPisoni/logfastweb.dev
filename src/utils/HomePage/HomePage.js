@@ -1,6 +1,7 @@
+import React from 'react';
 import axios from 'axios';
 import './HomePage.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { useEffect, useState } from 'react';
 

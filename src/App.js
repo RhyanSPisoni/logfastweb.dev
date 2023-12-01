@@ -1,3 +1,4 @@
+import React from 'react';
 import imgLogo from './img/logo.png'
 import './App.css';
 import HeaderMain from './utils/HeaderMain/HeaderMain';
@@ -6,7 +7,6 @@ import HomePage from './utils/HomePage/HomePage'
 const imgCenter = 'https://via.placeholder.com/154';
 function App() {
   return (
-    // <Router>
     <>
       <HeaderMain />
       <div className='bodyContent'>
@@ -16,9 +16,6 @@ function App() {
         <HomePage />
       </div>
     </>
-
-    // </Router>
-
   );
 }
 

@@ -22,13 +22,11 @@ h1 {
 .itemGitHub {
     position: relative;
     padding-top: 1vh;
-    margin-top: 2vh;
-    margin-right: 5vw;
-    width: 30%;
+    margin: 1%;
+    width: 30vw;
     min-height: 160px;
     background-color: #222632;
     border: 2px solid aliceblue;
-    margin-top: 2vh;
     font-weight: bold;
     color: #4D515B;
     text-decoration: none;
@@ -125,11 +123,7 @@ h1 {
 .cont-profile {
     padding: 1%;
     margin: 1%;
-    width: 98%;
-    height: 98%;
-    padding-bottom: 2vw;
     background-color: #161c2a;
-    justify-content: center;
 }
 
 .cicle {
@@ -143,6 +137,29 @@ h1 {
 .profile-user-order-item {
     display: flex;
     justify-content: space-between;
+}
+
+.db-exp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-user-db-exp-content {
+    min-height: 160px;
+
+    /* position: relative; */
+    /* padding-top: 1vh; */
+    margin: 1%;
+    background-color: #222632;
+    border: 2px solid aliceblue;
+    /* font-weight: bold; */
+    /* color: #4D515B; */
+    /* text-decoration: none; */
+    flex: 0 0 30%;
+    box-sizing: border-box;
+    padding: 8px;
 }
 
 @media screen and (max-width:1100px) {

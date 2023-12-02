@@ -20,7 +20,7 @@ function HomePage() {
     return (
         <div className='home-page-container'>
             <div className='cont-textos'>
-                <h2>Portifólio disponivel:</h2>
+                <h2>Portfólio disponivel:</h2>
 
             </div>
             <div className='home-page-person-info'>
@@ -30,7 +30,7 @@ function HomePage() {
                         <h2>{usePersonGitHub.name}</h2>
                         <Link id='link-port' to={"portfolio"}>
                             <div className='cont-port'>
-                                <h3>Acessar Portifólio</h3>
+                                <h3>Acessar Portfólio</h3>
                             </div>
                         </Link>
                     </div>

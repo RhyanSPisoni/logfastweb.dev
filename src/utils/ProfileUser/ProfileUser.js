@@ -1,9 +1,9 @@
 import './ProfileUser.css'
 import './PersonUser.css'
+import dbJson from '../../db-json-temp/dbExp.json'
 import axios from 'axios';
 import moment from 'moment'
 import HeaderMain from '../HeaderMain/HeaderMain';
-
 import { useEffect, useState } from 'react';
 
 function ProfileUser() {
@@ -53,17 +53,38 @@ function ProfileUser() {
                 <div className='person-info'>
                     <img src={usePersonGitHub.avatar_url} alt={usePersonGitHub.avatar_url} />
                     <div>
-                        <h2>{usePersonGitHub.name}</h2>
-                        <h3>Bio: {usePersonGitHub.bio}</h3>
+                        <h2>{dbJson.nome} - {usePersonGitHub.name}</h2>
+                        <h3>-{usePersonGitHub.bio}-</h3>
+                        <h4>Sobre mim: {dbJson.bio}</h4>
                     </div>
                 </div>
+                <h1>Experiências Profissional</h1>
+                <div className='db-exp'>
+                    {
+                        dbJson === null ? <p>Carregando...</p> : (
+                            dbJson.exp.map((item, index) => (
+                                <div key={index} className='profile-user-db-exp-content'>
+                                    <top>
+                                        <h3>Empresa: {item.empresa}</h3>
+                                    </top>
+                                    <h3>Vaga: {item.vaga}</h3>
+                                    <h3>Competências: {item.competencias.join(", ")}</h3>
+                                    <footer>
+                                        <h3>Inicio: {item.date_start}</h3>
+                                        <h3>Fim: {item.date_end}</h3>
+                                    </footer>
+                                </div>
+                            ))
+                        )
+                    }
+                </div>
+
                 <h1>Meus Projetos do Github</h1>
                 <div className='gitHub-container'>
                     {
                         useItensGitHub.length === 0 ? <p>Carregando...</p> : (
                             useItensGitHub.map((item, index) => (
-                                <div key={index} className={`itemGitHub 
-                            ${ENUM_COLORS_BORDA[item.language] || "default"}`} >
+                                <div key={index} className={`itemGitHub ${ENUM_COLORS_BORDA[item.language] || "default"}`} >
                                     <section className='profile-user-container-top'>
                                         <section className='profile-user-order-item'>
                                             <h2 id='id-name-git'>Nome: {item.name}</h2>

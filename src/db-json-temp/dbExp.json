@@ -1,0 +1,70 @@
+{
+    "nome": "Rhyan de Souza Pisoni",
+    "bio": "Olá, eu sou o Rhyan, atualmente sou desenvolvedor com mais de 2 anos de experiência em empresas e projetos relacionados, e gosto muito de tecnologia! \n \n Tecnologias e trabalhos já utilizadas: ReactJS, PowerBuilder, .Net, .Net Core, SQL Server, Sysbase, Oracle e integração de Sistemas",
+    "exp": [
+        {
+            "empresa": "TW Sistemas",
+            "vaga": "Programador",
+            "desc": "Realizava aplicações, desenvolvia e fazia integração de sistemas para sites",
+            "competencias": [
+                "C#",
+                ".Net",
+                "SysBase",
+                "Modelagem de Sistemas"
+            ],
+            "date_start": "31/08/2022",
+            "date_end": "05/04/2023"
+        },
+        {
+            "empresa": "Useall Software",
+            "vaga": "Desenvolvedor Back-end - Junior",
+            "desc": "Desenvolvedor back-end na equipe M2, onde realizava manutenção e implementação de recursos.",
+            "competencias": [
+                "C#",
+                ".Net",
+                "SQL",
+                "Oracle"
+            ],
+            "date_start": "04/10/2021",
+            "date_end": "07/04/2022"
+        },
+        {
+            "empresa": "AGPR5",
+            "vaga": "Estágio - Dev Back-end",
+            "desc": "Em função de fazer softwares para a necessidade da empresa.",
+            "competencias": [
+                "C#",
+                ".Net",
+                "SQL Server"
+            ],
+            "date_start": "31/08/2022",
+            "date_end": "05/04/2023"
+        }
+    ],
+    "escolaridade": [
+        {
+            "organizacao": "Cedup Abílio Paulo",
+            "curso": "Informática",
+            "tipo": "EMIEP",
+            "situacao": "Completo",
+            "date_start": "15/02/2018",
+            "date_end": "09/12/2020"
+        },
+        {
+            "organizacao": "Universidade do Extremo Sul Catarinense",
+            "curso": "Ciência da Computação",
+            "tipo": "Mestrado",
+            "situacao": "Incompleto",
+            "date_start": "03/03/2021",
+            "date_end": "07/07/2023"
+        },
+        {
+            "organizacao": "Universidade do Extremo Sul Catarinense",
+            "curso": "Análise de Desenvolvimento de Sistemas",
+            "tipo": "Tecnologo",
+            "situacao": "Em Andamento",
+            "date_start": "05/08/2023",
+            "date_end": null
+        }
+    ]
+}

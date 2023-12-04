@@ -26,10 +26,35 @@ h1 {
     width: 30vw;
     min-height: 160px;
     background-color: #222632;
-    border: 2px solid aliceblue;
+    border: 2px solid white;
     font-weight: bold;
-    color: #4D515B;
+    color: white;
     text-decoration: none;
+}
+
+.profile-user-order-item>h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.middle>a {
+    color: white;
+    margin-right: 2%;
+    text-decoration: underline;
+    padding: 1%;
+    border-radius: 5%;
+    background-color: #161c2a;
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.middle>h2 {
+    margin-bottom: 2%;
 }
 
 .itemGitHub :hover {
@@ -55,10 +80,6 @@ h1 {
     bottom: 0.5%;
 }
 
-.itemGitHub>section>a {
-    color: #4D515B;
-}
-
 #h2-ling>* {
     margin-left: 2%;
 }
@@ -68,6 +89,7 @@ h1 {
 }
 
 #id-name-git {
+    text-decoration: underline;
     margin-bottom: 2vh;
 }
 
@@ -137,29 +159,6 @@ h1 {
 .profile-user-order-item {
     display: flex;
     justify-content: space-between;
-}
-
-.db-exp {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.profile-user-db-exp-content {
-    min-height: 160px;
-
-    /* position: relative; */
-    /* padding-top: 1vh; */
-    margin: 1%;
-    background-color: #222632;
-    border: 2px solid aliceblue;
-    /* font-weight: bold; */
-    /* color: #4D515B; */
-    /* text-decoration: none; */
-    flex: 0 0 30%;
-    box-sizing: border-box;
-    padding: 8px;
 }
 
 @media screen and (max-width:1100px) {

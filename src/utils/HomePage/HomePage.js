@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './HomePage.css'
 import { Link } from 'react-router-dom';
+import cv from '../../Docs/cvrhyan.pdf';
 
 import { useEffect, useState } from 'react';
 
@@ -12,6 +13,21 @@ function HomePage() {
         axios.get("https://api.github.com/users/RhyanSPisoni")
             .then((res) => setPersonGitHub(res.data));
     }
+
+    const handleDownload = () => {
+
+        // Criar um link para iniciar o download
+        const a = document.createElement('a');
+        a.href = cv;
+        a.download = 'cvrdhyan.pdf'; // Nome do arquivo a ser baixado
+
+        // Adicionar o link ao corpo do documento e clicar nele
+        document.body.appendChild(a);
+        a.click();
+
+        // Remover o link depois que o download for iniciado
+        document.body.removeChild(a);
+    };
 
     useEffect(() => {
         getPersonGitHub();
@@ -33,6 +49,9 @@ function HomePage() {
                                 <h3>Acessar Portfólio</h3>
                             </div>
                         </Link>
+                        <div onClick={handleDownload} className='download-cv'>
+                            <h3>Baixar Currículo</h3>
+                        </div>
                     </div>
                 </div>
             </div>

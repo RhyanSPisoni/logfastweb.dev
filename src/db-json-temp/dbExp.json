@@ -38,19 +38,7 @@
                 "SQL Server"
             ],
             "date_start": "31/08/2022",
-            "date_end": "05/04/2023"
-        },
-        {
-            "empresa": "AGPR5",
-            "vaga": "Estágio - Dev Back-end",
-            "desc": "Em função de fazer softwares para a necessidade da empresa.",
-            "competencias": [
-                "C#",
-                ".Net",
-                "SQL Server"
-            ],
-            "date_start": "31/08/2022",
-            "date_end": "05/04/2023"
+            "date_end": "08/08/2021"
         }
     ],
     "escolaridade": [

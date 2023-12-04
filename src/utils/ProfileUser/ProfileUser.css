@@ -40,21 +40,18 @@ h1 {
 
 .middle>a {
     color: white;
-    margin-right: 2%;
+    /* margin: 2%; */
     text-decoration: underline;
     padding: 1%;
     border-radius: 5%;
     background-color: #161c2a;
 
     display: flex;
-    width: 100%;
     justify-content: center;
     justify-items: center;
     align-items: center;
-}
-
-.middle>h2 {
-    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 98%;
 }
 
 .itemGitHub :hover {
@@ -163,6 +160,7 @@ h1 {
 
 @media screen and (max-width:1100px) {
     .itemGitHub {
+        margin-bottom: 5%;
         width: 40vh;
         overflow-x: hidden;
     }

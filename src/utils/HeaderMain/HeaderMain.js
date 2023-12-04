@@ -10,7 +10,7 @@ function HeaderMain() {
         <div className='header-main-container'>
             <header>
                 <div className='header-main-container-left'>
-                    <span id='header-main-HeaderHome'><Link id='header-main-LinkRoutes' to="/">HOME</Link></span>
+                    <span id='header-main-HeaderHome'><Link id='header-main-LinkRoutes' to="/home">HOME</Link></span>
                     <span><Link id='header-main-LinkRoutes' to="https://github.com/rhyanspisoni">PROJETOS</Link></span>
                     <span><Link id='header-main-LinkRoutes' to="https://www.linkedin.com/in/rhyan-de-souza-pisoni/">CONTATO</Link></span>
                 </div>

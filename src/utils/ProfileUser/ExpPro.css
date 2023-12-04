@@ -1,0 +1,44 @@
+.db-exp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.profile-user-db-exp-content {
+    min-height: 160px;
+    min-width: 350px;
+    margin: 1%;
+    background-color: #222632;
+    border: 2px solid black;
+    flex: 0 0 30%;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+.profile-user-db-exp-content>h3 {
+    padding: 5%;
+}
+
+.profile-user-db-exp-content>top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.profile-user-db-exp-content>footer {
+    justify-content: space-between;
+    display: flex;
+    background-color: #161c2a;
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    bottom: 0.5%;
+    padding: 1%;
+}

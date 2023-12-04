@@ -48,3 +48,34 @@
 .cont-port {
     background-color: white;
 }
+
+.download-cv>h3 {
+    padding: 5%;
+}
+
+.download-cv {
+    margin-top: 1vw;
+    background-color: white;
+    /* padding: 2%; */
+    /* border-radius: 10%; */
+    border: 2px solid black;
+    cursor: pointer;
+    color: black;
+    /* padding: 1%; */
+}
+
+.download-cv :hover {
+    color: white;
+    background-color: #222632;
+}
+
+.download-cv>* :hover {
+    color: white;
+    background-color: #222632;
+}
+
+@media screen and (max-width:870px) {
+    .download-cv {
+        margin-top: 5vw;
+    }
+}

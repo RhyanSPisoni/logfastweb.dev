@@ -11,7 +11,7 @@ function PageStarter() {
                     Acessar
                 </h3>
             </Link>
-            <h5>Desenvolvido em ReactJS com integração ao GitHub - versão: 2.0</h5>
+            <h5>Desenvolvido em ReactJS com integração ao GitHub - versão: 1.0</h5>
         </div >
     );
 }

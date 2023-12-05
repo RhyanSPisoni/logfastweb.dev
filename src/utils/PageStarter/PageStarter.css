@@ -11,3 +11,9 @@
     padding: .5%;
     margin: 0.5%;
 }
+
+@media screen and (max-width:500px) {
+    .page-starter-page-starter>h5 {
+        margin: 5%
+    }
+}

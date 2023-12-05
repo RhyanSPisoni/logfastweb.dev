@@ -4,19 +4,15 @@ import { Link } from 'react-router-dom';
 
 function PageStarter() {
     return (
-        <div>
-            <div className='page-starter-page-starter'>
-                <div className='page-starter-div-texto'>
-                    <h1>SEJA BEM VINDO!</h1>
-                </div>
-                <Link id='page-starter-link-text' to="/home">
-                    <div className='page-starter-container-bottom'>
-                        Acessar
-                    </div>
-                </Link>
-                <h5>Desenvolvido em ReactJS com integração ao GitHub - versão: 2.0</h5>
-            </div>
-        </div>
+        <div className='page-starter-page-starter'>
+            <h1>SEJA BEM VINDO!</h1>
+            <Link className='cont-div-test btn-default' to={"home"}>
+                <h3>
+                    Acessar
+                </h3>
+            </Link>
+            <h5>Desenvolvido em ReactJS com integração ao GitHub - versão: 2.0</h5>
+        </div >
     );
 }
 

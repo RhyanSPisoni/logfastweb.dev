@@ -24,3 +24,18 @@ code {
     monospace;
 }
 
+.btn-default {
+  margin: 5%;
+  color: black;
+  background-color: white;
+  padding: 2%;
+  border: 2px solid;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-default:hover {
+  background-color: #161c2a;
+  color: white;
+  border: 2px solid white;
+}

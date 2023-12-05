@@ -38,7 +38,7 @@ h1 {
     justify-content: center;
 }
 
-.middle>a {
+.git-hub-middle>a {
     color: white;
     /* margin: 2%; */
     text-decoration: underline;
@@ -52,6 +52,13 @@ h1 {
     align-items: center;
     margin-top: 2%;
     width: 98%;
+}
+
+.git-hub-middle>a:hover {
+    background-color: #4D515B;
+    border: 2px solid;
+    color: black;
+    text-decoration: none;
 }
 
 .itemGitHub :hover {

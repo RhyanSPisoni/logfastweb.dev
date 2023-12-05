@@ -1,27 +1,13 @@
 .page-starter-page-starter {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
+    color: white;
 }
 
-#page-starter-link-text {
-    text-decoration: none;
-    background-color: aliceblue;
-    width: 100px;
-    border: 2px solid black;
+.cont-div-test {
+    padding: .5%;
+    margin: 0.5%;
 }
-
-.page-starter-container-bottom {
-    padding: 5%;
-    color: black;
-    font-size: 25px;
-    font-family: 'Kanit', sans-serif;
-}
-
-div>h5 {
-    margin-top: 2%;
-    color: aliceblue;
-}
-

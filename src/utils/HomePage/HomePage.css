@@ -1,81 +1,21 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-.home-page-person-info {
-    color: white;
-    display: flex;
-    justify-content: center;
+.home-page-container {
     margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
 .home-page-person-info-div>img {
-    height: 200px;
-    width: 200px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    margin-bottom: 1vw;
 }
 
-.home-page-person-info-div>div>* {
+.home-page-person-info-div {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.cont-port {
-    padding: 2%;
-    margin-top: 0.5vw;
-    background-color: #222632;
-    border-radius: 10%;
-    border: 2px solid black;
-    cursor: pointer;
-}
-
-.cont-textos {
-    color: white;
-    margin-top: 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#link-port {
-    color: black;
-    text-decoration: none;
-}
-
-.cont-port {
-    background-color: white;
-}
-
-.download-cv>h3 {
-    padding: 5%;
-}
-
-.download-cv {
-    margin-top: 1vw;
-    background-color: white;
-    /* padding: 2%; */
-    /* border-radius: 10%; */
-    border: 2px solid black;
-    cursor: pointer;
-    color: black;
-    /* padding: 1%; */
-}
-
-.download-cv :hover {
-    color: white;
-    background-color: #222632;
-}
-
-.download-cv>* :hover {
-    color: white;
-    background-color: #222632;
-}
-
-@media screen and (max-width:870px) {
-    .download-cv {
-        margin-top: 5vw;
-    }
 }

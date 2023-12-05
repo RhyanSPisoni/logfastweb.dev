@@ -97,7 +97,7 @@ function ProfileUser() {
                                             <h2 id='id-name-git'>{item.name}</h2>
                                             <section className={`cicle ${ENUM_COLORS[item.language] || "default"}`}></section>
                                         </section>
-                                        <section className='middle'>
+                                        <section className='git-hub-middle'>
                                             <h2 id='h2-ling'>Linguagem: {item.language}</h2>
                                             <a href={item.html_url}>Repositório</a>
                                         </section>

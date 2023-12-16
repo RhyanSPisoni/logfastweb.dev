@@ -11,6 +11,12 @@ function ProfileUser() {
     const [useItensGitHub, setItensGitHub] = useState([]);
     const [usePersonGitHub, setPersonGitHub] = useState([]);
 
+    const [useBuscaItensGitHub, setBuscaItensGitHub] = useState('');
+
+
+    const lowerBuscaGitHub = useBuscaItensGitHub.toLowerCase();
+    const itensGitHubFiltrados = useItensGitHub.filter(item => item.name.toLowerCase().includes(lowerBuscaGitHub));
+
     const getitensGitHub = async () => {
         axios.get("https://api.github.com/users/RhyanSPisoni/repos")
             .then((res) => setItensGitHub(res.data));
@@ -30,6 +36,7 @@ function ProfileUser() {
         getitensGitHub();
         getPersonGitHub();
     }, []);
+
 
     const ENUM_COLORS = {
         "C#": "roxo",
@@ -87,10 +94,14 @@ function ProfileUser() {
                     }
                 </div>
                 <h1>Meus Projetos do Github</h1>
+                <input
+                    type='text'
+                    onChange={(env) => setBuscaItensGitHub(env.target.value)}
+                />
                 <div className='gitHub-container'>
                     {
-                        useItensGitHub.length === 0 ? <p>Carregando...</p> : (
-                            useItensGitHub.map((item, index) => (
+                        itensGitHubFiltrados.length === 0 ? <p>Carregando...</p> : (
+                            itensGitHubFiltrados.map((item, index) => (
                                 <div key={index} className={`itemGitHub ${ENUM_COLORS_BORDA[item.language] || "default"}`} >
                                     <section className='profile-user-container-top'>
                                         <section className='profile-user-order-item'>

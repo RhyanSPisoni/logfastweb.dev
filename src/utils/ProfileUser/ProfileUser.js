@@ -3,19 +3,27 @@ import './PersonUser.css';
 import './ExpPro.css';
 import dbJson from '../../db-json-temp/dbExp.json';
 import axios from 'axios';
-import moment from 'moment';
+// import moment from 'moment';
 import HeaderMain from '../HeaderMain/HeaderMain';
+import TableRepGitHub from './TableRepGitHub';
 import { useEffect, useState } from 'react';
+import { ConvertDate } from '../ConvertDate';
+import CardRepGitHub from './CardRepGitHub';
 
 function ProfileUser() {
     const [useItensGitHub, setItensGitHub] = useState([]);
     const [usePersonGitHub, setPersonGitHub] = useState([]);
 
     const [useBuscaItensGitHub, setBuscaItensGitHub] = useState('');
-
+    const [useModeloExibidoGitHubEscolhido, setModeloExibidoGitHubEscolhido] = useState('');
 
     const lowerBuscaGitHub = useBuscaItensGitHub.toLowerCase();
     const itensGitHubFiltrados = useItensGitHub.filter(item => item.name.toLowerCase().includes(lowerBuscaGitHub));
+
+    const UpdateLocalStorageModeloGitHub = async (string) => {
+        setModeloExibidoGitHubEscolhido(string);
+        localStorage.setItem('modeloExibidoGitHubEscolhido', string);
+    }
 
     const getitensGitHub = async () => {
         axios.get("https://api.github.com/users/RhyanSPisoni/repos")
@@ -27,32 +35,15 @@ function ProfileUser() {
             .then((res) => setPersonGitHub(res.data));
     }
 
-    function ConveterData(string) {
-        const formattedDate = moment(string).format('DD/MM/YYYY');
-        return formattedDate;
-    }
-
     useEffect(() => {
         getitensGitHub();
         getPersonGitHub();
+
+        const modeloExibidoGitHubEscolhido = localStorage.getItem('modeloExibidoGitHubEscolhido')
+        if (modeloExibidoGitHubEscolhido)
+            setModeloExibidoGitHubEscolhido(modeloExibidoGitHubEscolhido);
+
     }, []);
-
-
-    const ENUM_COLORS = {
-        "C#": "roxo",
-        "HTML": "laranja",
-        "C++": "azul",
-        "JavaScript": "amarelo",
-        "Java": "vermelho"
-    }
-
-    const ENUM_COLORS_BORDA = {
-        "C#": "roxoBorda",
-        "HTML": "laranjaBorda",
-        "C++": "azulBorda",
-        "JavaScript": "amareloBorda",
-        "Java": "vermelhoBorda"
-    }
 
     return (
         <div className='profile-user-container'>
@@ -71,7 +62,6 @@ function ProfileUser() {
                         <h2>Sobre mim: <h5>{dbJson.bio}</h5></h2>
                     </div>
                 </div>
-
 
                 <h1>Experiência Profissional</h1>
                 <div className='db-exp'>
@@ -93,38 +83,29 @@ function ProfileUser() {
                         )
                     }
                 </div>
-                <h1>Meus Projetos do Github</h1>
-                <input
-                    type='text'
-                    onChange={(env) => setBuscaItensGitHub(env.target.value)}
-                />
-                <div className='gitHub-container'>
-                    {
-                        itensGitHubFiltrados.length === 0 ? <p>Carregando...</p> : (
-                            itensGitHubFiltrados.map((item, index) => (
-                                <div key={index} className={`itemGitHub ${ENUM_COLORS_BORDA[item.language] || "default"}`} >
-                                    <section className='profile-user-container-top'>
-                                        <section className='profile-user-order-item'>
-                                            <h2 id='id-name-git'>{item.name}</h2>
-                                            <section className={`cicle ${ENUM_COLORS[item.language] || "default"}`}></section>
-                                        </section>
-                                        <section className='git-hub-middle'>
-                                            <h2 id='h2-ling'>Linguagem: {item.language}</h2>
-                                            <a href={item.html_url}>Repositório</a>
-                                        </section>
-                                    </section>
 
-                                    <footer>
-                                        <h5 className='date-created'>Criado: {ConveterData(item.created_at)}</h5>
-                                        <h5 className='date-updated'>Atualizado: {ConveterData(item.updated_at)}</h5>
-                                    </footer>
-                                </div>
-                            ))
-                        )
-                    }
+
+                <div>
+                    <h1>Meus Projetos do Github</h1>
+
+                    <div>
+                        <h3>Busque pelo nome:</h3>
+                        <input
+                            type='text'
+                            onChange={(env) => setBuscaItensGitHub(env.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <h3>Escolha um meio de exibição:</h3>
+                        <select id='models' name='models' value={useModeloExibidoGitHubEscolhido} onChange={(env) => UpdateLocalStorageModeloGitHub(env.target.value)}>
+                            <option value="table">Tabela</option>
+                            <option value="card">Cartão</option>
+                        </select>
+                    </div>
+                    {useModeloExibidoGitHubEscolhido === "table" ? <TableRepGitHub itens={itensGitHubFiltrados} /> : <CardRepGitHub itens={itensGitHubFiltrados} />}
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }

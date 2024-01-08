@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { ConvertDate } from '../ConvertDate';
 
 function TableRepGitHub(list) {

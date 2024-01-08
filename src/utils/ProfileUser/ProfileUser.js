@@ -7,7 +7,6 @@ import axios from 'axios';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import TableRepGitHub from './TableRepGitHub';
 import { useEffect, useState } from 'react';
-import { ConvertDate } from '../ConvertDate';
 import CardRepGitHub from './CardRepGitHub';
 
 function ProfileUser() {

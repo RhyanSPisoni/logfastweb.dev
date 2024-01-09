@@ -1,9 +1,18 @@
 import { ConvertDate } from '../ConvertDate';
+import './TableRepGitHub.css';
 
 function TableRepGitHub(list) {
+    function verificarPar(numero) {
+        if (numero % 2 === 0)
+            return true;
+        else
+            return false;
+    }
+
+
     const { itens } = list;
 
-    return <>
+    return <div className='Table-Rep-Container'>
         <table>
             <thead>
                 <tr>
@@ -14,6 +23,7 @@ function TableRepGitHub(list) {
                     <th>Atualizado</th>
                 </tr>
             </thead>
+
             <tbody>
                 {itens.length === 0 ? (
                     <tr>
@@ -21,7 +31,7 @@ function TableRepGitHub(list) {
                     </tr>
                 ) : (
                     itens.map((item, index) => (
-                        <tr key={index}>
+                        <tr key={index} className={verificarPar(index) ? "escuro" : "claro"}>
                             <td>{item.name}</td>
                             <td>{item.language === null ? "Null" : item.language}</td>
                             <td>
@@ -34,7 +44,7 @@ function TableRepGitHub(list) {
                 )}
             </tbody>
         </table>
-    </>
+    </div>
 }
 
 export default TableRepGitHub;

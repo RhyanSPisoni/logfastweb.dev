@@ -207,3 +207,35 @@ h1 {
         text-align: center;
     }
 }
+
+.GitHub-Container-Master {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-model {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* background-color: aquamarine; */
+    width: 80%;
+}
+
+.category-model>h3 {
+    margin-right: 10px;
+}
+
+
+.category-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: white; */
+}
+
+.input-procura-nome {
+    width: 20vw;
+}

@@ -34,13 +34,19 @@ function ProfileUser() {
             .then((res) => setPersonGitHub(res.data));
     }
 
+    console.log("AAAAAAAAAAA")
     useEffect(() => {
         getitensGitHub();
         getPersonGitHub();
 
         const modeloExibidoGitHubEscolhido = localStorage.getItem('modeloExibidoGitHubEscolhido')
-        if (modeloExibidoGitHubEscolhido)
+        console.log(modeloExibidoGitHubEscolhido)
+        if (modeloExibidoGitHubEscolhido) {
             setModeloExibidoGitHubEscolhido(modeloExibidoGitHubEscolhido);
+        }
+        else {
+            setModeloExibidoGitHubEscolhido("table");
+        }
 
     }, []);
 

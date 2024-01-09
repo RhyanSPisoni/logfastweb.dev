@@ -39,7 +39,6 @@ function ProfileUser() {
         getPersonGitHub();
 
         const modeloExibidoGitHubEscolhido = localStorage.getItem('modeloExibidoGitHubEscolhido')
-        console.log(modeloExibidoGitHubEscolhido)
         if (modeloExibidoGitHubEscolhido)
             setModeloExibidoGitHubEscolhido(modeloExibidoGitHubEscolhido);
         else

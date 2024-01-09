@@ -7,10 +7,9 @@ a {
 }
 
 table {
+    margin-top: 20px;
     color: white;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    width: 80vw;
     border-collapse: collapse;
 }
 
@@ -27,8 +26,3 @@ td {
 .claro {
     background-color: #4D515B;
 }
-
-/*
-4D515B
-222632
-*/

@@ -1,0 +1,34 @@
+.Table-Rep-Container {
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+table {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid rgb(175, 167, 167);
+}
+
+.escuro {
+    background-color: #222632;
+}
+
+.claro {
+    background-color: #4D515B;
+}
+
+/*
+4D515B
+222632
+*/

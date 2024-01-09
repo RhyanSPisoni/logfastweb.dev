@@ -41,7 +41,8 @@ function ProfileUser() {
         const modeloExibidoGitHubEscolhido = localStorage.getItem('modeloExibidoGitHubEscolhido')
         if (modeloExibidoGitHubEscolhido)
             setModeloExibidoGitHubEscolhido(modeloExibidoGitHubEscolhido);
-
+        else
+            setModeloExibidoGitHubEscolhido("table");
     }, []);
 
     return (

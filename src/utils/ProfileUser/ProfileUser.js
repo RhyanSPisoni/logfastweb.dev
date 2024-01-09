@@ -62,8 +62,7 @@ function ProfileUser() {
                         <h2>Sobre mim: <h5>{dbJson.bio}</h5></h2>
                     </div>
                 </div>
-
-                {/* <h1>Experiência Profissional</h1>
+                <h1>Experiência Profissional</h1>
                 <div className='db-exp'>
                     {
                         dbJson === null ? <p>Carregando...</p> : (
@@ -82,9 +81,7 @@ function ProfileUser() {
                             ))
                         )
                     }
-                </div> */}
-
-
+                </div>
                 <div className='GitHub-Container-Master'>
                     <h1>Meus Projetos do Github</h1>
                     <div className='category-filter'>

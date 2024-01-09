@@ -218,7 +218,7 @@ h1 {
 
 .category-model {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     /* background-color: aquamarine; */
     width: 80%;

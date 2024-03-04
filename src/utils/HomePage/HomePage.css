@@ -9,7 +9,6 @@
 .home-page-person-info-div>img {
     margin-top: 10%;
     margin-bottom: 5%;
-    height: 300px;
     width: 300px;
     border-radius: 50%;
     border: 2px solid;
@@ -26,10 +25,5 @@
         margin-bottom: 5vh;
         height: 240px;
         width: 240px;
-    }
-
-    .home-page-container {
-        /* padding: 2%; */
-        /* margin-bottom: 50% */
     }
 }

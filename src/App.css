@@ -5,16 +5,12 @@
   box-sizing: border-box;
 }
 
-
-
 /* Meio */
 .bodyContent {
-  margin: 1%;
-  width: 98%;
-  height: 90vh;
-  padding-bottom: 2vw;
   background-color: #161c2a;
   justify-content: center;
+  margin: 1%;
+  min-height: 90vh;
 }
 
 .content {

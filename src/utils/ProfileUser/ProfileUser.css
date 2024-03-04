@@ -233,9 +233,57 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: white; */
+    margin-bottom: 2.5%;
 }
 
 .input-procura-nome {
     width: 20vw;
+}
+
+#BuscaNomeP{
+    display: none;
+}
+
+.input-procura-nome{
+    width: 200px;
+}
+
+
+.category-model > select{
+    width: 70px;
+    height: 30px;
+    background-color: #222632;
+    color: aliceblue;
+}
+
+@media screen and (max-width:500px) {
+    .GitHub-Container-Master > h1 {
+        font-size: 28px;
+    }
+
+    .category-filter{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 2%;
+    }
+    
+    .category-filter > *{
+        margin-right: 5px;
+    }
+
+    #BuscaNomeG{
+        display: none;
+    }
+
+    #BuscaNomeP{
+        display: block;
+    }    
+
+    .input-procura-nome{
+        width: 150px;
+    }
+
+    .category-model{
+        justify-content: center;
+    }
 }

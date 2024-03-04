@@ -11,7 +11,10 @@ function HomePage() {
 
     const getPersonGitHub = async () => {
         axios.get("https://api.github.com/users/RhyanSPisoni")
-            .then((res) => setPersonGitHub(res.data));
+            .then((res) => setPersonGitHub(res.data))
+            .catch(error => {
+                console.log("");
+            });
     }
 
     const handleDownload = () => {

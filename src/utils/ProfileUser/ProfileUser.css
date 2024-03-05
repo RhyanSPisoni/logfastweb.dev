@@ -1,7 +1,4 @@
-#root{
-    /* min-height: 100%; */
-}
-.profile-user-container{
+.profile-user-container {
     overflow-x: hidden;
     /* background-color: aliceblue; */
     width: 100%;

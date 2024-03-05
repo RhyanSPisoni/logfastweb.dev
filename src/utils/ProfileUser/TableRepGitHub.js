@@ -26,12 +26,12 @@ function TableRepGitHub(list) {
 
             <tbody>
                 {itens.length === 0 ? (
-                    <tr>
-                        <td>Valdsadsaodddddr</td>
-                        <td>Valdsadsaodddddr</td>
-                        <td>Valdsadsaodddddr</td>
-                        <td>Valdsadsaodddddr</td>
-                        <td>Valdsadsaodddddr</td>
+                    <tr className='escuro'>
+                        <td>Carregando</td>
+                        <td>Carregando</td>
+                        <td>Carregando</td>
+                        <td>Carregando</td>
+                        <td>Carregando</td>
                     </tr>
                 ) : (
                     itens.map((item, index) => (

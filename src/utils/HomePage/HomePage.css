@@ -9,9 +9,14 @@
 .home-page-person-info-div>img {
     margin-top: 10%;
     margin-bottom: 5%;
-    width: 300px;
     border-radius: 50%;
     border: 2px solid;
+
+    min-width: 250px;
+    min-height: 250px;
+
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .home-page-person-info-div {
@@ -20,6 +25,10 @@
     align-items: center;
 }
 
+
+.App{
+    height: 100% auto;
+}
 @media screen and (max-width:500px) {
     .home-page-person-info-div>img {
         margin-bottom: 5vh;

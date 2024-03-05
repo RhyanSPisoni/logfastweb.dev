@@ -54,7 +54,7 @@ function ProfileUser() {
     return (
         <div className='profile-user-container'>
             <HeaderMain />
-            <div className='cont-profile'>
+            <div className='cont-profile bodyContent'>
 
                 <div className='person-info'>
                     <div className='about'>

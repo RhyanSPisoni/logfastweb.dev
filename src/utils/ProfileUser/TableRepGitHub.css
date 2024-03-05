@@ -1,55 +1,52 @@
 .Table-Rep-Container {
-    text-align: center;
+  display: flex;
+  min-width: 50%;
+  text-align: center;
 }
 
 a {
-    color: white;
+  color: white;
 }
 
 table {
-    margin-top: 20px;
-    color: white;
-    width: 80vw;
-    border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  color: white;
+  border-collapse: collapse;
 }
 
 th,
 td {
-    padding: 8px;
-    border: 1px solid rgb(175, 167, 167);
+  padding: 8px;
+  border: 1px solid rgb(175, 167, 167);
 }
 
 .escuro {
-    background-color: #222632;
+  background-color: #222632;
 }
 
 .claro {
-    background-color: #4D515B;
+  background-color: #4D515B;
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:470px) {
+  table {
+    display: flex;
+    width: 90vw;
+    flex-direction: column;
+    columns: auto;
+    overflow-x: auto;
+  }
 
-    .table-container {
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* Rola suavemente em dispositivos iOS */
-      }
-      
-      table {
-        width: auto;
-        min-width: 100%; /* Define a largura mínima da tabela para preencher o contêiner */
-        border-collapse: collapse;
-      }
-      
-      th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-      }
-      
-      th {
-        background-color: #f2f2f2;
-      }
-      
+  th,
+  td {
+    min-width: 150px;
+    max-width: 150px;
+  }
+
+  th,
+  td {
+    overflow-x: auto;
+  }
 }

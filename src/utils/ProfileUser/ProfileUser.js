@@ -26,12 +26,18 @@ function ProfileUser() {
 
     const getitensGitHub = async () => {
         axios.get("https://api.github.com/users/RhyanSPisoni/repos")
-            .then((res) => setItensGitHub(res.data));
+            .then((res) => setItensGitHub(res.data))
+            .catch(error => {
+
+            });
     }
 
     const getPersonGitHub = async () => {
         axios.get("https://api.github.com/users/RhyanSPisoni")
-            .then((res) => setPersonGitHub(res.data));
+            .then((res) => setPersonGitHub(res.data))
+            .catch(error => {
+
+            });
     }
 
     useEffect(() => {
@@ -48,7 +54,7 @@ function ProfileUser() {
     return (
         <div className='profile-user-container'>
             <HeaderMain />
-            <div className='cont-profile'>
+            <div className='cont-profile bodyContent'>
 
                 <div className='person-info'>
                     <div className='about'>
@@ -82,10 +88,12 @@ function ProfileUser() {
                         )
                     }
                 </div>
+
                 <div className='GitHub-Container-Master'>
                     <h1>Meus Projetos do Github</h1>
                     <div className='category-filter'>
-                        <h3>Busque pelo Nome</h3>
+                        <h3 id='BuscaNomeG'>Busque pelo Nome em Baixo</h3>
+                        <h3 id='BuscaNomeP'>Busque pelo Nome:</h3>
                         <input className='input-procura-nome'
                             type='text'
                             onChange={(env) => setBuscaItensGitHub(env.target.value)}

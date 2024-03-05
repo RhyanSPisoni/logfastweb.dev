@@ -7,7 +7,7 @@ import HomePage from './utils/HomePage/HomePage'
 const imgCenter = 'https://via.placeholder.com/154';
 function App() {
   return (
-    <>
+    <div className='App'>
       <HeaderMain />
       <div className='bodyContent'>
         <div className='content'>
@@ -15,7 +15,7 @@ function App() {
         </div>
         <HomePage />
       </div>
-    </>
+    </div>
   );
 }
 

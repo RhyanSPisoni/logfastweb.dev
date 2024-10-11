@@ -5,13 +5,17 @@
   box-sizing: border-box;
 }
 
-#root{
+#root {
   min-width: 50vh;
 }
 
 .content {
-  padding-top: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.App {
+  height: 100vh;
+}
+

@@ -10,7 +10,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #222632;
+  background-color: #161c2a;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 code {
@@ -19,13 +21,18 @@ code {
 }
 
 .btn-default {
-  margin: 5%;
   color: black;
   background-color: white;
+
   padding: 2%;
+  margin: 5px;
+
   border: 2px solid;
-  text-decoration: none;
   cursor: pointer;
+
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
 }
 
 .btn-default:hover {
@@ -38,11 +45,27 @@ a {
   color: black;
 }
 
-.bodyContent {
-  min-width: 98%;
-  min-height: 100vh;
-  padding-top: 1%;
-  min-height: 90vh;
-  background-color: #161c2a;
-  margin: 1%;
+.main {
+  overflow-y: auto;
+  padding: 1%;
+  border: 10px solid #222632;
+  height: 100vh;
+}
+
+.img-profile {
+  margin-bottom: 5%;
+  border-radius: 50%;
+  border: 2px solid white;
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white;
 }

@@ -54,11 +54,11 @@ function ProfileUser() {
     return (
         <div className='profile-user-container'>
             <HeaderMain />
-            <div className='cont-profile bodyContent'>
+            <div className='cont-profile main'>
 
                 <div className='person-info'>
-                    <div className='about'>
-                        <img src={usePersonGitHub.avatar_url} alt={usePersonGitHub.avatar_url} />
+                    <div className='about-profile'>
+                        <img className='img-profile' src={usePersonGitHub.avatar_url} alt={usePersonGitHub.avatar_url} />
                         <div>
                             <h2>{dbJson.nome}</h2>
                             <h3>Bio: -{usePersonGitHub.bio}-</h3>
@@ -68,25 +68,29 @@ function ProfileUser() {
                         <h2>Sobre mim: <h5>{dbJson.bio}</h5></h2>
                     </div>
                 </div>
-                <h1>Experiência Profissional</h1>
+
                 <div className='db-exp'>
-                    {
-                        dbJson === null ? <p>Carregando...</p> : (
-                            dbJson.exp.map((item, index) => (
-                                <div key={index} className='profile-user-db-exp-content'>
-                                    <top>
-                                        <h3>{item.empresa}</h3>
-                                        <h3>-{item.vaga}-</h3>
-                                    </top>
-                                    <h3>{item.competencias.join("| ")}</h3>
-                                    <footer>
-                                        <h5>Inicio: {item.date_start}</h5>
-                                        <h5>Fim: {item.date_end}</h5>
-                                    </footer>
-                                </div>
-                            ))
-                        )
-                    }
+                    <h1>Experiência Profissional</h1>
+                    <div>
+                        {
+                            dbJson === null ? <p>Carregando...</p> : (
+                                dbJson.exp.map((item, index) => (
+                                    <div key={index} className='profile-user-db-exp-content'>
+                                        <top>
+                                            <h3>{item.empresa}</h3>
+                                            <h3>-{item.vaga}-</h3>
+                                        </top>
+                                        <h3>{item.competencias.join("| ")}</h3>
+                                        <footer>
+                                            <h5 className='date_start'>Inicio: {item.date_start}</h5>
+                                            <h5 className='date_end'>Fim: {item.date_end}</h5>
+                                        </footer>
+                                    </div>
+                                ))
+                            )
+                        }
+
+                    </div>
                 </div>
 
                 <div className='GitHub-Container-Master'>

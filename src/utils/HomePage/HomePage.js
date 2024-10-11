@@ -38,17 +38,17 @@ function HomePage() {
 
     return (
         <div className='home-page-container'>
-            <div className='cont-textos'>
-                <h2>Portfólio disponivel:</h2>
-            </div>
             <div className='home-page-person-info-div'>
-                <img src={usePersonGitHub.avatar_url} alt={usePersonGitHub.avatar_url} />
+                <img className='img-profile' src={usePersonGitHub.avatar_url} alt={usePersonGitHub.avatar_url} />
                 <h2>{usePersonGitHub.name}</h2>
+            </div>
+
+            <div>
                 <Link className='btn-default' to={"portfolio"}>
-                    <h3>Acessar Portfólio</h3>
+                    Acessar Portfólio
                 </Link>
                 <div onClick={handleDownload} className='btn-default'>
-                    <h3>Baixar Currículo</h3>
+                    Baixar Currículo
                 </div>
             </div>
         </div>

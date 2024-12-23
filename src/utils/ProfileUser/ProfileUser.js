@@ -1,6 +1,7 @@
 import './ProfileUser.css';
 import './PersonUser.css';
 import './ExpPro.css';
+import './GitHubTable.css'
 import dbJson from '../../db-json-temp/dbExp.json';
 import axios from 'axios';
 // import moment from 'moment';
@@ -55,7 +56,6 @@ function ProfileUser() {
         <div className='profile-user-container'>
             <HeaderMain />
             <div className='cont-profile main'>
-
                 <div className='person-info'>
                     <div className='about-profile'>
                         <img className='img-profile' src={usePersonGitHub.avatar_url} alt={usePersonGitHub.avatar_url} />
@@ -96,7 +96,6 @@ function ProfileUser() {
                 <div className='GitHub-Container-Master'>
                     <h1>Meus Projetos do Github</h1>
                     <div className='category-filter'>
-                        <h3 id='BuscaNomeG'>Busque pelo Nome em Baixo</h3>
                         <h3 id='BuscaNomeP'>Busque pelo Nome:</h3>
                         <input className='input-procura-nome'
                             type='text'

@@ -1,0 +1,30 @@
+.GitHub-Container-Master {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    height: 100vh;
+    width: auto;
+}
+
+tr>* {
+    /* max-width: 6.5vw; */
+    height: 1vh;
+    color: white;
+    border: 1px solid rgb(175, 167, 167);
+    padding: 8px;
+    text-align: center;
+    /* overflow-x: auto; */
+    white-space: normal;
+}
+
+a{
+    color:  white;
+}

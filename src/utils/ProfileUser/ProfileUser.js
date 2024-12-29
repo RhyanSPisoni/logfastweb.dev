@@ -95,21 +95,7 @@ function ProfileUser() {
 
                 <div className='GitHub-Container-Master'>
                     <h1>Meus Projetos do Github</h1>
-                    <div className='category-filter'>
-                        <h3 id='BuscaNomeP'>Busque pelo Nome:</h3>
-                        <input className='input-procura-nome'
-                            type='text'
-                            onChange={(env) => setBuscaItensGitHub(env.target.value)}
-                        />
-                    </div>
-                    <div className='category-model'>
-                        <h3>Escolha um meio de exibição:</h3>
-                        <select id='models' name='models' value={useModeloExibidoGitHubEscolhido} onChange={(env) => UpdateLocalStorageModeloGitHub(env.target.value)}>
-                            <option value="table">Tabela</option>
-                            <option value="card">Cartão</option>
-                        </select>
-                    </div>
-                    {useModeloExibidoGitHubEscolhido === "table" ? <TableRepGitHub itens={itensGitHubFiltrados} /> : <CardRepGitHub itens={itensGitHubFiltrados} />}
+                    <TableRepGitHub itens={itensGitHubFiltrados} />
                 </div>
             </div>
         </div >

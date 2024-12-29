@@ -39,7 +39,7 @@ function TableRepGitHub(list) {
                             <td>{item.name}</td>
                             <td>{item.language === null ? "Null" : item.language}</td>
                             <td>
-                                <a href={item.html_url}>Repositório</a>
+                                <a href={item.html_url}>Link</a>
                             </td>
                             <td>{ConvertDate(item.created_at)}</td>
                             <td>{ConvertDate(item.updated_at)}</td>

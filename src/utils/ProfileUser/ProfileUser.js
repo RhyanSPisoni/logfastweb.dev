@@ -8,22 +8,21 @@ import axios from 'axios';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import TableRepGitHub from './TableRepGitHub';
 import { useEffect, useState } from 'react';
-import CardRepGitHub from './CardRepGitHub';
 
 function ProfileUser() {
     const [useItensGitHub, setItensGitHub] = useState([]);
     const [usePersonGitHub, setPersonGitHub] = useState([]);
 
     const [useBuscaItensGitHub, setBuscaItensGitHub] = useState('');
-    const [useModeloExibidoGitHubEscolhido, setModeloExibidoGitHubEscolhido] = useState('');
+    // const [useModeloExibidoGitHubEscolhido, setModeloExibidoGitHubEscolhido] = useState('');
 
     const lowerBuscaGitHub = useBuscaItensGitHub.toLowerCase();
     const itensGitHubFiltrados = useItensGitHub.filter(item => item.name.toLowerCase().includes(lowerBuscaGitHub));
 
-    const UpdateLocalStorageModeloGitHub = async (string) => {
-        setModeloExibidoGitHubEscolhido(string);
-        localStorage.setItem('modeloExibidoGitHubEscolhido', string);
-    }
+    // const UpdateLocalStorageModeloGitHub = async (string) => {
+    //     setModeloExibidoGitHubEscolhido(string);
+    //     localStorage.setItem('modeloExibidoGitHubEscolhido', string);
+    // }
 
     const getitensGitHub = async () => {
         axios.get("https://api.github.com/users/RhyanSPisoni/repos")
@@ -45,11 +44,11 @@ function ProfileUser() {
         getitensGitHub();
         getPersonGitHub();
 
-        const modeloExibidoGitHubEscolhido = localStorage.getItem('modeloExibidoGitHubEscolhido')
-        if (modeloExibidoGitHubEscolhido)
-            setModeloExibidoGitHubEscolhido(modeloExibidoGitHubEscolhido);
-        else
-            setModeloExibidoGitHubEscolhido("table");
+        // const modeloExibidoGitHubEscolhido = localStorage.getItem('modeloExibidoGitHubEscolhido')
+        // if (modeloExibidoGitHubEscolhido)
+        //     setModeloExibidoGitHubEscolhido(modeloExibidoGitHubEscolhido);
+        // else
+        //     setModeloExibidoGitHubEscolhido("table");
     }, []);
 
     return (
@@ -95,6 +94,13 @@ function ProfileUser() {
 
                 <div className='GitHub-Container-Master'>
                     <h1>Meus Projetos do Github</h1>
+                    <div className='category-filter'>
+                        <h3 id='BuscaNomeP'>Busque pelo Nome:</h3>
+                        <input className='input-procura-nome'
+                            type='text'
+                            onChange={(env) => setBuscaItensGitHub(env.target.value)}
+                        />
+                    </div>
                     <TableRepGitHub itens={itensGitHubFiltrados} />
                 </div>
             </div>

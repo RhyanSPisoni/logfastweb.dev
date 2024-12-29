@@ -1,52 +1,30 @@
-.Table-Rep-Container {
-  display: flex;
-  min-width: 50%;
-  text-align: center;
+.GitHub-Container-Master {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
 }
 
-a {
-  color: white;
-}
 
 table {
-  width: 100%;
-  margin-top: 20px;
-  color: white;
-  border-collapse: collapse;
+    margin: 20px;
+    border-collapse: collapse;
+    height: 100vh;
+    width: auto;
 }
 
-th,
-td {
-  padding: 8px;
-  border: 1px solid rgb(175, 167, 167);
+tr>* {
+    /* max-width: 6.5vw; */
+    height: 1vh;
+    color: white;
+    border: 1px solid rgb(175, 167, 167);
+    padding: 8px;
+    text-align: center;
+    /* overflow-x: auto; */
+    white-space: normal;
 }
 
-.escuro {
-  background-color: #222632;
-}
-
-.claro {
-  background-color: #4D515B;
-}
-
-
-@media screen and (max-width:470px) {
-  table {
-    display: flex;
-    width: 90vw;
-    flex-direction: column;
-    columns: auto;
-    overflow-x: auto;
-  }
-
-  th,
-  td {
-    min-width: 150px;
-    max-width: 150px;
-  }
-
-  th,
-  td {
-    overflow-x: auto;
-  }
+a{
+    color:  white;
 }

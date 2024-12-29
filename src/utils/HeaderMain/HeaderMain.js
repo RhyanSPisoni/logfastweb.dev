@@ -15,9 +15,7 @@ function HeaderMain() {
                     <span><Link id='header-main-LinkRoutes' to="https://www.linkedin.com/in/rhyan-de-souza-pisoni/">CONTATO</Link></span>
                 </div>
                 <div className='header-main-container-right'>
-                    <span>
-                        <Link id='header-main-LinkRoutes' to="/">LOGFAST DEV</Link>
-                    </span>
+                    <Link id='header-main-LinkRoutes' to="/">LOGFAST DEV</Link>
                     <img src={imgLogin} alt={imgLoginAlt} />
                 </div>
             </header>
